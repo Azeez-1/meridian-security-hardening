@@ -4,7 +4,7 @@ fastapi==0.141.1
 uvicorn==0.53.0
 pydantic==2.13.5
 requests==2.34.2
-python-multipart==0.0.32
+python-multipart==0.0.6
 idna==3.19
 starlette==1.6.0
 urllib3==2.8.0
