@@ -1,0 +1,7 @@
+{
+  "source": ["meridian.demo"],
+  "detail-type": ["GuardDuty Finding"],
+  "detail": {
+    "severity": [{ "numeric": [">=", 7] }]
+  }
+}
