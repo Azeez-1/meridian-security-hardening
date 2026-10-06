@@ -1,0 +1,31 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ManageCompromisedUserAccessKeys",
+      "Effect": "Allow",
+      "Action": [
+        "iam:ListAccessKeys",
+        "iam:UpdateAccessKey",
+        "iam:PutUserPolicy"
+      ],
+      "Resource": "arn:aws:iam::*:user/*"
+    },
+    {
+      "Sid": "PublishSecurityAlerts",
+      "Effect": "Allow",
+      "Action": "sns:Publish",
+      "Resource": "REPLACE_WITH_YOUR_SNS_TOPIC_ARN"
+    },
+    {
+      "Sid": "WriteLambdaLogs",
+      "Effect": "Allow",
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Resource": "arn:aws:logs:*:*:*"
+    }
+  ]
+}
